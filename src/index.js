@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 
-// heroku metrics plugin
-require('fuzzy-rotary-phone');
-
 const http = require('http');
 const crypto = require('crypto');
 
