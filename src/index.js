@@ -4,6 +4,7 @@ const http = require('http');
 const crypto = require('crypto');
 
 const PORT = process.env.PORT || 5000;
+const OPTIONS = process.env.NODE_OPTIONS || "not found";
 
 // This will block the event loop for ~lengths of time
 function blockCpuFor(ms) {
@@ -40,7 +41,7 @@ setInterval(() => {
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end(`Hello, world!\n`);
+  res.end(OPTIONS);
 })
 
 server.listen(PORT, () => console.log(`Listening on ${PORT}`));
