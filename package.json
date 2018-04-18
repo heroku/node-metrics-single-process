@@ -7,7 +7,8 @@
   "scripts": {
     "prettify": "prettier --single-quote --trailing-comma all --write 'bin/*' 'src/**/*.js'",
     "test": "jest --silent",
-    "dev": "nodemon --watch . --watch src/* src/index.js"
+    "dev": "nodemon --watch . --watch src/* src/index.js",
+    "heroku-postbuild": "echo $NODE_OPTIONS"
   },
   "main": "index.js",
   "license": "MIT",
