@@ -2,7 +2,7 @@
   "name": "hello-world",
   "version": "1.0.0",
   "engines": {
-    "node": "10.x"
+    "node": "10.1.0"
   },
   "scripts": {
     "prettify": "prettier --single-quote --trailing-comma all --write 'bin/*' 'src/**/*.js'",
